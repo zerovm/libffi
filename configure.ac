@@ -177,7 +177,7 @@ case "$host" in
 	TARGETDIR=x86
 	if test $ac_cv_sizeof_size_t = 4; then
 	  case "$host" in
-	    *-gnux32)
+	    *-gnux32 | *-nacl)
 	      TARGET=X86_64
 	      ;;
 	    *)
